@@ -20,5 +20,27 @@ namespace BuchVerwaltungLernen
         {
             InitializeComponent();
         }
+
+        private void bAdd_Click(object sender, RoutedEventArgs e)
+        {
+                string titel = tbTitel.Text;
+                string autor = tbAutor.Text;
+                string isbn = tbIsbn.Text;
+                int erscheinungsjahr = Convert.ToInt32(tbErscheinungsjahr.Text);
+                Buch neuesBuch = new Buch(titel, autor, isbn, erscheinungsjahr);
+                Buch.Hinzufuegen(neuesBuch);
+                
+        }
+
+        private void bDel_Click(object sender, RoutedEventArgs e)
+        {
+            string isbn = tbIsbn.Text;
+            Buch.Entfernen(isbn);
+        }
+
+        private void bShow_Click(object sender, RoutedEventArgs e)
+        {
+            lShow.Content = Buch.Anzeigen();
+        }
     }
 }

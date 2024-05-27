@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBox x:Name="tbTitel" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Titel" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbAutor" HorizontalAlignment="Left" Margin="135,10,0,0" TextWrapping="Wrap" Text="Autor" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbIsbn" HorizontalAlignment="Left" Margin="260,10,0,0" TextWrapping="Wrap" Text="Autor" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbErscheinungsjahr" HorizontalAlignment="Left" Margin="385,10,0,0" TextWrapping="Wrap" Text="Erscheinungsjahr" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="bAdd" Content="Hinzufügen" HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" Width="120" Click="bAdd_Click"/>
+        <Button x:Name="bDel" Content="Entfernen" HorizontalAlignment="Left" Margin="135,33,0,0" VerticalAlignment="Top" Width="120" Click="bDel_Click"/>
+        <Button x:Name="bShow" Content="Anzeigen" HorizontalAlignment="Left" Margin="260,33,0,0" VerticalAlignment="Top" Width="120" Click="bShow_Click"/>
+        <Label x:Name="lShow" Content="Label" Margin="35,83,35,40"/>
 
     </Grid>
 </Window>
