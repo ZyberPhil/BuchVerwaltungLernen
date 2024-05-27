@@ -7,14 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="tbTitel" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Titel" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbAutor" HorizontalAlignment="Left" Margin="135,10,0,0" TextWrapping="Wrap" Text="Autor" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbIsbn" HorizontalAlignment="Left" Margin="260,10,0,0" TextWrapping="Wrap" Text="Autor" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbErscheinungsjahr" HorizontalAlignment="Left" Margin="385,10,0,0" TextWrapping="Wrap" Text="Erscheinungsjahr" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="bAdd" Content="Hinzufügen" HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" Width="120" Click="bAdd_Click"/>
-        <Button x:Name="bDel" Content="Entfernen" HorizontalAlignment="Left" Margin="135,33,0,0" VerticalAlignment="Top" Width="120" Click="bDel_Click"/>
-        <Button x:Name="bShow" Content="Anzeigen" HorizontalAlignment="Left" Margin="260,33,0,0" VerticalAlignment="Top" Width="120" Click="bShow_Click"/>
-        <Label x:Name="lShow" Content="Label" Margin="35,83,35,40"/>
+        <TextBox x:Name="tbTitel" HorizontalAlignment="Left" Margin="10,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbAutor" HorizontalAlignment="Left" Margin="135,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbIsbn" HorizontalAlignment="Left" Margin="260,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbErscheinungsjahr" HorizontalAlignment="Left" Margin="385,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="bAdd" Content="Hinzufügen" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" Width="120" Click="bAdd_Click"/>
+        <Button x:Name="bDel" Content="Entfernen" HorizontalAlignment="Left" Margin="135,63,0,0" VerticalAlignment="Top" Width="120" Click="bDel_Click"/>
+        <Button x:Name="bShow" Content="Anzeigen" HorizontalAlignment="Left" Margin="260,63,0,0" VerticalAlignment="Top" Width="120" Click="bShow_Click"/>
+        <Label x:Name="lShow" Content="" Margin="35,113,35,10"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,21,0,0" TextWrapping="Wrap" Text="Titel" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="135,21,0,0" TextWrapping="Wrap" Text="Autor" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="260,21,0,0" TextWrapping="Wrap" Text="ISBN" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="385,21,0,0" TextWrapping="Wrap" Text="Erscheinungsjahr" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
