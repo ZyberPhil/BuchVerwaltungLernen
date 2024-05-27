@@ -29,6 +29,7 @@ namespace BuchVerwaltungLernen
                 int erscheinungsjahr = Convert.ToInt32(tbErscheinungsjahr.Text);
                 Buch neuesBuch = new Buch(titel, autor, isbn, erscheinungsjahr);
                 Buch.Hinzufuegen(neuesBuch);
+                Reload();
                 
         }
 
@@ -36,8 +37,12 @@ namespace BuchVerwaltungLernen
         {
             string isbn = tbIsbn.Text;
             Buch.Entfernen(isbn);
+            Reload();
         }
-
+        public void Reload()
+        {
+            lShow.Content = Buch.Anzeigen();
+        }
         private void bShow_Click(object sender, RoutedEventArgs e)
         {
             lShow.Content = Buch.Anzeigen();
